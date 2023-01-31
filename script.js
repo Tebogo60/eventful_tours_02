@@ -39,6 +39,7 @@ const openMenu = () => {
 const closePop = () => {
   signupForm.classList.remove("pop-signup");
   loginForm.classList.remove("pop-booking");
+  expandImg.classList.remove("expand-pop");
 };
 
 window.addEventListener("scroll", () => {
@@ -127,3 +128,23 @@ const moveLabelSignIn = () => {
 };
 
 // FORM VALIDATION ------------------------------------------- //
+
+// GALLERY --------------------------------------------------- //
+
+const upSize = document.querySelectorAll(".upsize-img");
+const expandImg = document.querySelector(".expand-img");
+
+const expand = () => {
+  expandImg.classList.add("expand-pop");
+  body.classList.add("overflow-hidden");
+};
+
+upSize[0].addEventListener("click", () => {
+  expand();
+});
+
+// GALLERY --------------------------------------------------- //
+
+// FOOTER ---------------------------------------------------- //
+
+// FOOTER ---------------------------------------------------- //
