@@ -36,6 +36,11 @@ const openMenu = () => {
   }
 };
 
+const closePop = () => {
+  signupForm.classList.remove("pop-signup");
+  loginForm.classList.remove("pop-booking");
+};
+
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY;
 
