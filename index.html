@@ -4,664 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventful Tours | Official Website</title>
+    <title>Eventful Tours | Official Wesbite</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body>
-    <div class="cookie">
-      This site uses cookies, if you stay here you accept their use. You can
-      read more about the use of cookies in our <a href="">cookies policy.</a>
-    </div>
 
-    <div class="booking-form">
-      <h5 class="heading">Login</h5>
+  <body class="body">
+    <a href="" class="btn-secondary back-top">
+      <span></span>
+    </a>
 
-      <span class="close-pop" onclick="closePop()"></span>
-
-      <form action="" class="form">
-        <div class="input">
-          <label class="label">Email</label>
-          <input type="email" name="email" />
-        </div>
-
-        <div class="input">
-          <label class="label">Password</label>
-          <input type="password" name="password" />
-        </div>
-
-        <div class="input">
-          <a href="" class="btn-dark">Login</a>
-        </div>
-
-        <span>Sign in with:</span>
-      </form>
-    </div>
-
-    <div class="signup-form">
-      <h5 class="heading">Sign Up</h5>
-
-      <span class="close-pop" onclick="closePop()"></span>
-
-      <form action="" class="form">
-        <div class="input">
-          <label class="label">Username</label>
-          <input type="text" name="username" />
-        </div>
-
-        <div class="input">
-          <label class="label">Email</label>
-          <input type="email" name="email" />
-        </div>
-
-        <div class="input">
-          <label class="label">Create Password</label>
-          <input type="password" name="password" />
-        </div>
-
-        <div class="input">
-          <label class="label">Confirm Password</label>
-          <input type="password" name="password" />
-        </div>
-
-        <div class="input">
-          <a href="" class="btn-dark">Sign in</a>
-        </div>
-
-        <span>Sign in with:</span>
-      </form>
-    </div>
-
-    <nav class="navbar">
-      <div class="container-fluid">
-        <a href="" class="brand">
-          Eventful
-          <br />
-          Tours
-        </a>
-        <div class="nav-btns">
-          <span class="btn" onclick="openBookForm()">Login</span>
-          <span class="btn" onclick="openSignInForm()">sign up</span>
-          <div class="hamburger" onclick="openMenu()">
-            <span class="ham-top"></span>
-            <span class="ham-middle"></span>
-            <span class="ham-bottom"></span>
-          </div>
-        </div>
-        <div class="menu-links">
-          <div class="nav-container">
-            <ul class="nav-links tours-links">
-              Tours
-              <li><a href="" class="nav-link">available</a></li>
-              <li><a href="" class="nav-link">upcoming tours</a></li>
-              <li>
-                <a href="" class="nav-link">
-                  feedback & recommandations
-                  <span>Tell us where would you like to go?</span>
-                </a>
-              </li>
-            </ul>
-
-            <ul class="nav-img">
-              <li><img src="images/234234.png" /></li>
-            </ul>
-
-            <ul class="nav-links nav-menu-links">
-              Menu
-              <li><a href="" class="nav-link">Home</a></li>
-              <li><a href="" class="nav-link">services</a></li>
-              <li><a href="" class="nav-link">booking</a></li>
-              <li><a href="" class="nav-link">Gallery</a></li>
-              <li><a href="" class="nav-link">about</a></li>
-              <li><a href="" class="nav-link">contact</a></li>
-            </ul>
-
-            <ul class="nav-links social-links">
-              <li><a href="" class="nav-link">facebook</a></li>
-              <li><a href="" class="nav-link">instagram</a></li>
-              <li><a href="" class="nav-link">whatsapp</a></li>
-              <li><a href="" class="nav-link">twitter</a></li>
-            </ul>
-          </div>
-        </div>
+    <nav class="nav">
+      <div class="brand">
+        <a href="#"> Eventful Tours </a>
       </div>
+
+      <div class="menu open-menu">
+        <ul class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="pages/bookings.html">bookings</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="social-links">
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-btns">
+        <a href="" class="btn-secondary small-mobile">
+          <span>Login</span>
+          <i class="far fa-user"></i>
+        </a>
+        <a href="" class="btn-secondary small-mobile">
+          <span>Sign up</span>
+          <i class="fa fa-sign-in"></i>
+        </a>
+
+        <!-- <div class="modes">
+          <div class="light-mode">
+            <i class="fa fa-sun"></i>
+          </div>
+          <div class="dark-mode mode-active">
+            <i class="fa fa-moon"></i>
+          </div>
+        </div> -->
+      </div>
+
+      <span class="hamburger">
+        <span></span>
+      </span>
     </nav>
 
-    <div class="content">
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="jumbo-info">
-            <div class="jumbo-text">
-              <span>Welcome to <b>Eventful Tours</b></span> Local Attractions
-              near the city
-            </div>
-            <span class="btn">book now</span>
-          </h1>
-        </div>
+    <div class="jumbo">
+      <div class="container">
+        <div class="jumbo-text">
+          <p class="jumbo-subtitle">Welcome to <b>Eventful Tours!</b></p>
+          <h1 class="jumbo-title title">Local Attractions near the city</h1>
 
-        <div class="tours">
-          <div class="container">
-            <div class="tours-grid">
-              <span class="available-tours tour">
-                available tours
-
-                <div class="list">
-                  <a href="" class="list-card">
-                    <div class="todays-date">25 Jun 2023</div>
-                    <h5>Tour Title & Discription here</h5>
-                    <div class="card-tags">
-                      <div>Adventure</div>
-                      <div>Camp</div>
-                      <div>Parks</div>
-                    </div>
-                  </a>
-
-                  <a href="" class="list-card">
-                    <div class="todays-date">25 Jun 2023</div>
-                    <h5>Tour Title & Discription here</h5>
-                    <div class="card-tags">
-                      <div>Adventure</div>
-                      <div>Camp</div>
-                      <div>Parks</div>
-                    </div>
-                  </a>
-
-                  <a href="" class="list-card">
-                    <div class="todays-date">25 Jun 2023</div>
-                    <h5>Tour Title & Discription here</h5>
-                    <div class="card-tags">
-                      <div>Adventure</div>
-                      <div>Camp</div>
-                      <div>Parks</div>
-                    </div>
-                  </a>
-                </div>
-              </span>
-
-              <span class="upcoming-tours tour">
-                upcoming tours
-
-                <div class="list">
-                  <a href=""></a>
-
-                  <a href="" class="list-card">
-                    <div class="todays-date">25 Jun 2023</div>
-                    <h5>Tour Title & Discription here</h5>
-                    <div class="card-tags">
-                      <div>Adventure</div>
-                      <div>Camp</div>
-                      <div>Parks</div>
-                    </div>
-                  </a>
-
-                  <a href="" class="list-card">
-                    <div class="todays-date">25 Jun 2023</div>
-                    <h5>Tour Title & Discription here</h5>
-                    <div class="card-tags">
-                      <div>Adventure</div>
-                      <div>Camp</div>
-                      <div>Parks</div>
-                    </div>
-                  </a>
-                </div>
-              </span>
-
-              <span class="feedback-tours tour">feedback & tours</span>
-            </div>
-          </div>
+          <a href="" class="btn-secondary">Book Now</a>
         </div>
       </div>
-
-      <section id="services">
-        <div class="container text-center">
-          <h1 class="title">Our Service</h1>
-
-          <div class="services-info">
-            <p>
-              Eventful Tours is a tourism company that provides exciting and
-              educational local bus trips for people of all ages. We offer a
-              variety of itineraries showcasing the best sights, sounds and
-              cultural experiences of the surrounding area. With knowledgeable
-              guides and comfortable buses, Eventful Tours provides a fun and
-              memorable experience for everyone.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="bookings">
-        <div class="container">
-          <h1 class="title">Bookings</h1>
-          <h3 class="sub-title">
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-            archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-            de las industrias desde el año 1500, cuando un impresor (N. del T.
-            persona que se dedica a la imprenta) desconocido usó una galería de
-            textos y los mezcló de tal manera que logró hacer un libro de textos
-            especimen.
-          </h3>
-
-          <div class="tags">
-            <div>
-              <a href="" class="tag">All</a>
-              <a href="" class="tag">Adventure</a>
-              <a href="" class="tag">Camp</a>
-              <a href="" class="tag">Parks</a>
-              <a href="" class="tag">Road Trip</a>
-              <a href="" class="tag">Weekend trip</a>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-img">
-                <img src="uploads/4.jpg" alt="" />
-              </div>
-
-              <div class="card-info">
-                <div class="card-details">
-                  <a href="" class="cd-location">
-                    <i class="fa fa-map-marker"></i> Johannesburg
-                  </a>
-                  <a href="" class="cd-date" align="right">
-                    Posted - 2 Jan 2022
-                  </a>
-                </div>
-
-                <h3 class="card-title">Lorem Ipsum</h3>
-                <p>
-                  Ees simplemente el texto de relleno de las imprentas y
-                  archivos de texto.
-                </p>
-                <div class="tags">
-                  <div>
-                    <a href="" class="tag">adventure</a>
-                    <a href="" class="tag">road trip</a>
-                    <a href="" class="tag">weekend</a>
-                    <a href="" class="tag">Camping</a>
-                  </div>
-                </div>
-                <div class="card-btn">
-                  <a href="" class="btn-dark">book now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="subscribe">
-        <div class="container">
-          <div class="col-2 align-center">
-            <div class="sub-text">
-              <h1 class="title">Subscribe to our news letter.</h1>
-              <h3 class="sub-title">
-                Subscribe to Eventful Tours' newsletter for trip updates and
-                promotions. Stay informed and never miss a chance to experience
-                local culture. Subscribe now!
-              </h3>
-            </div>
-            <form action="" class="sub-form input-active">
-              <div class="input col">
-                <label class="label">Email</label>
-                <input type="email" name="email" />
-              </div>
-              <div class="input">
-                <button class="btn-dark" type="submit" value="Subscribe">
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <div class="expand-img">
-        <img src="uploads/6.jpg" alt="images" />
-        <span class="img-backward"></span>
-        <span class="img-forward"></span>
-
-        <span class="close-pop" onclick="closePop()"></span>
-      </div>
-
-      <section id="gallery">
-        <div class="container">
-          <h1 class="title">Gallery</h1>
-          <h3 class="sub-title">
-            Eventful Tours Gallery showcases beautiful and memorable moments
-            from past tours. Explore the diverse range of local itineraries we
-            offer, from scenic views to cultural experiences Browse the gallery
-            and start planning your next adventure with Eventful Tours.
-          </h3>
-
-          <div class="col-3">
-            <div class="gallery-card">
-              <img src="uploads/6.jpg" alt="images" name="6.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <img src="uploads/7.jpg" alt="images" name="7.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-            <div class="gallery-card">
-              <img src="uploads/8.jpg" alt="images" name="8.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <img src="uploads/6.jpg" alt="images" name="6.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <img src="uploads/7.jpg" alt="images" name="7.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-            <div class="gallery-card">
-              <img src="uploads/8.jpg" alt="images" name="8.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <img src="uploads/6.jpg" alt="images" name="6.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-
-            <div class="gallery-card">
-              <img src="uploads/7.jpg" alt="images" name="7.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-            <div class="gallery-card">
-              <img src="uploads/8.jpg" alt="images" name="8.jpg" />
-              <div class="gallery-icon">
-                <span class="upsize-img">
-                  <div class="fa fa-expand"></div>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container text-center">
-          <h1 class="title">About us</h1>
-
-          <div class="about-info">
-            <p>
-              Eventful Tours is a tourism company that provides exciting and
-              educational local bus trips for people of all ages. We offer a
-              variety of itineraries showcasing the best sights, sounds and
-              cultural experiences of the surrounding area. With knowledgeable
-              guides and comfortable buses, Eventful Tours provides a fun and
-              memorable experience for everyone.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer">
-        <div class="container">
-          <div class="col-4">
-            <div class="">
-              <h1 class="title">About us</h1>
-
-              <p>
-                <small>
-                  Eventful Tours is a tourism company that provides exciting and
-                  educational local bus trips for people of all ages. We offer a
-                  variety of itineraries showcasing the best sights, sounds and
-                  cultural experiences of the surrounding area...
-                </small>
-              </p>
-
-              <div class="copyright">© 2022, All rights reserved.</div>
-            </div>
-
-            <ul class="footer-links">
-              <h1 class="title">NAvigation</h1>
-
-              <li><a href="" class="nav-link">Home</a></li>
-              <li><a href="" class="nav-link">service</a></li>
-              <li><a href="" class="nav-link">booking</a></li>
-              <li><a href="" class="nav-link">Gallery</a></li>
-              <li><a href="" class="nav-link">about</a></li>
-              <li><a href="" class="nav-link">contact</a></li>
-            </ul>
-
-            <ul class="footer-links">
-              <h1 class="title">follow us on:</h1>
-
-              <li><a href="" class="nav-link">facebook</a></li>
-              <li><a href="" class="nav-link">instagram</a></li>
-              <li><a href="" class="nav-link">whatsapp</a></li>
-              <li><a href="" class="nav-link">twitter</a></li>
-            </ul>
-
-            <div class="">
-              <h1 class="title">Subscribe now</h1>
-
-              <form action="" class="sub-form input-active col-1">
-                <div class="input">
-                  <label class="label">Email</label>
-                  <input type="email" name="email" />
-                </div>
-                <div class="input">
-                  <button class="btn" type="submit" value="Subscribe">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
-    <script src="js/icons.js"></script>
-    <script src="script.js"></script>
+    <section>
+      <div class="container">
+        <div class="center col-2 align-center">
+          <div class="text">
+            <h1 class="title">Welcome To Eventful Tours!</h1>
+            <p>
+              Eventful Tours is a tourism company that provides exciting and
+              educational local bus trips for people of all ages. We offer a
+              variety of itineraries showcasing the best sights, sounds and
+              cultural experiences of the surrounding area. With knowledgeable
+              guides and comfortable buses, Eventful Tours provides a fun and
+              memorable experience for everyone.
+            </p>
+          </div>
+          <img src="uploads/10.jpg" alt="image" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="center col-2 align-center">
+          <img src="uploads/7.jpg" alt="" srcset="" />
+          <div class="text">
+            <h1 class="title">Our services</h1>
+            <p>
+              Eventful Tours is a tourism company that provides exciting and
+              educational local bus trips for people of all ages. We offer a
+              variety of itineraries showcasing the best sights, sounds and
+              cultural experiences of the surrounding area. With knowledgeable
+              guides and comfortable buses, Eventful Tours provides a fun and
+              memorable experience for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="center col-1 text-center">
+          <div class="text">
+            <h1 class="title">About us</h1>
+            <p>
+              Eventful Tours is a tourism company that provides exciting and
+              educational local bus trips for people of all ages. We offer a
+              variety of itineraries showcasing the best sights, sounds and
+              cultural experiences of the surrounding area. With knowledgeable
+              guides and comfortable buses, Eventful Tours provides a fun and
+              memorable experience for everyone.
+            </p>
+            <!-- <a href="" class="btn">book now</a> -->
+          </div>
+          <img src="images/lap11.png" alt="" srcset="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="subscribe">
+      <div class="container">
+        <div class="col-2 align-center">
+          <div class="text">
+            <h1 class="title">Subscribe to our news letter.</h1>
+            <p>
+              Subscribe to Eventful Tours' newsletter for trip updates and
+              promotions. Stay informed and never miss a chance to experience
+              local culture. <br />
+              Subscribe now!
+            </p>
+          </div>
+          <form action="" class="form">
+            <div class="input">
+              <label class="label">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="input">
+              <button class="btn" type="submit" value="Subscribe">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>
+          <small>
+            <small>© 2023, All rights reserved.</small>
+          </small>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/awesome_icons.js"></script>
   </body>
 </html>
