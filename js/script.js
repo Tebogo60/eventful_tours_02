@@ -1,8 +1,14 @@
 // N A V I G A T I O N --------------------------------------------
 
 const body = document.querySelector(".body");
+
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
+
+// body.addEventListener("click", () => {
+
+// });
+window.addEventListener("scroll", () => {});
 
 let menuQpened = false;
 
