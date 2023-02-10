@@ -86,3 +86,9 @@ window.addEventListener("scroll", () => {
 // });
 
 // N A V I G A T I O N --------------------------------------------
+
+// menulink.forEach((link) => {
+//   link.addEventListener("click", function () {
+//     console.log(this.id);
+//   });
+// });
