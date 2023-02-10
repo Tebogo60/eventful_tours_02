@@ -46,6 +46,7 @@
   color: var(--secondary);
   font-size: 75px;
   font-weight: 100;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
 
   width: 15ch;
 
