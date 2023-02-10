@@ -109,13 +109,13 @@ img {
 
   position: fixed;
   top: 0;
-  right: 0;
+  right: -500px;
 
   transition: 1s ease;
 }
 
 .open-menu {
-  right: -500px;
+  right: 0;
 }
 
 .menu-links {

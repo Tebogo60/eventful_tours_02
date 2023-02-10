@@ -20,6 +20,7 @@ const openMenu = () => {
   }
 
   menu.classList.toggle("open-menu");
+  menu.classList.toggle("open-menu-bg");
 };
 
 hamburger.addEventListener("click", () => {
