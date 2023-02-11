@@ -90,3 +90,10 @@ window.addEventListener("scroll", () => {
 // S E C T I O N S ------------------------------------------------
 
 // S E C T I O N S ------------------------------------------------
+
+// F O R M --------------------------------------------------------
+
+const label = document.querySelectorAll(".label");
+const input = document.querySelectorAll(".input");
+
+label.addEventListener("click", (event) => {});
