@@ -299,9 +299,24 @@
 /* S U B S C R I B E */
 
 .subscribe {
+  color: var(--secondary);
+  background: var(--primary-color);
   padding: 100px 0;
+}
 
-  border-top: 1px solid var(--primary);
+.subscribe .title,
+.subscribe p {
+  color: var(--secondary);
+}
+
+.subscribe .input input {
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.subscribe .label {
+  color: var(--secondary);
+  background: var(--primary-color);
 }
 
 /* S U B S C R I B E */
@@ -310,7 +325,7 @@
 
 footer {
   color: var(--secondary);
-  background: var(--primary);
+  background: var(--primary-color);
   padding: 20px 0 30px;
 }
 

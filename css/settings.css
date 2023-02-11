@@ -371,7 +371,6 @@ img {
 /* M E N U */
 
 /* S E C T I O N S */
-/* S E C T I O N S */
 
 section {
   background: var(--secondary);
@@ -423,7 +422,7 @@ section {
 }
 
 .back-top:hover {
-  background: none;
+  background: var(--secondary);
   border: 1px solid var(--primary-color);
 }
 
@@ -696,12 +695,14 @@ textarea:focus {
 
 @media (max-width: 992px) {
   section {
-    height: 800px;
-    padding: 0;
+    position: relative;
+    height: 100%;
+    padding: 100px 0;
   }
 
   .container {
     width: 95%;
+    height: 100%;
   }
 }
 
@@ -711,9 +712,17 @@ textarea:focus {
     text-align: center;
   }
 
+  .center {
+    width: 100%;
+
+    position: relative;
+    top: none;
+    transform: none;
+  }
+
   .align-center {
-    align-items: start;
-    justify-content: start;
+    align-items: none;
+    justify-content: none;
   }
 
   .menu {
