@@ -60,35 +60,4 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// const lightMode = document.querySelector(".light-mode");
-// const darkMode = document.querySelector(".dark-mode");
-
-// const modes = document.querySelector(".modes");
-
-// let lightModeActive = false;
-
-// modes.addEventListener("click", () => {
-//   if (lightModeActive === false) {
-//     lightMode.classList.add("mode-active");
-//     darkMode.classList.remove("mode-active");
-//     body.classList.toggle("light-theme");
-
-//     lightModeActive = true;
-//     console.log(lightModeActive);
-//     console.log(body);
-//   } else {
-//     lightMode.classList.remove("mode-active");
-//     darkMode.classList.add("mode-active");
-//     body.classList.toggle("light-theme");
-
-//     lightModeActive = false;
-//   }
-// });
-
 // N A V I G A T I O N --------------------------------------------
-
-// S E C T I O N S ------------------------------------------------
-
-// S E C T I O N S ------------------------------------------------
-
-// F O R M --------------------------------------------------------

@@ -1,23 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 :root {
-  --primary: rgb(32, 33, 36);
-  --inbetween: rgb(128, 128, 128);
-  --secondary: rgb(255, 255, 255);
+  --primary-000: rgb(255, 255, 255);
+  --primary-300: rgb(200, 200, 200);
+  --primary-600: rgb(120, 120, 120);
+  --primary-900: rgb(32, 33, 36);
 
-  --primary-color: #c6763d;
+  --secondary-300: rgb(197, 164, 141);
+  --secondary-600: rgb(214, 156, 114);
+  --secondary-900: rgb(198, 118, 61);
 }
-/* 
-.light-theme {
-  --primary: rgba(24, 25, 28, 1);
-  --inbetween: rgb(128, 128, 128);
-  --secondary: rgb(255, 255, 255);
-} */
 
 ::-webkit-scrollbar {
   width: 1px;
@@ -29,13 +21,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: var(--secondary-900);
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
 
-  background: var(--secondary);
+  background: var(--primary-000);
 
   transition: 1s ease;
   overflow-x: hidden;
@@ -43,7 +40,6 @@ body {
 
 img {
   width: 100%;
-  /* border-radius: 10px; */
 }
 
 .overflow-hidden {
@@ -51,16 +47,96 @@ img {
 }
 
 .bg-primary {
-  background: var(--primary);
+  background: var(--primary-900);
 }
 
 .bg-secondary {
-  background: var(--secondary);
+  background: var(--primary-000);
 }
 
 .bg-primary-color {
-  background: var(--primary-color);
+  background: var(--secondary-900);
 }
+
+/* H E A D I N G */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 10px 0 0;
+  opacity: 0.75;
+}
+
+.title {
+  font-family: "PT Serif", serif;
+  color: var(--primary-900);
+  font-size: 45px;
+  text-transform: capitalize;
+
+  margin: 10px 0;
+
+  z-index: 2;
+}
+
+.p-title {
+  font-family: "PT Serif", serif;
+  color: var(--primary-900);
+  font-size: 22px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* H E A D I N G */
+
+/* S E C T I O N S */
+
+section {
+  position: relative;
+  background: var(--primary-000);
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1140px;
+  height: 100%;
+
+  margin: auto;
+}
+
+.center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text {
+  color: var(--primary-900);
+  font-weight: 100;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* S E C T I O N S */
+
+/* M E N U */
 
 .nav {
   height: 70px;
@@ -73,7 +149,7 @@ img {
 }
 
 .nav-fixed {
-  background: var(--primary-color);
+  background: var(--secondary-900);
   position: fixed;
   top: -70px;
 }
@@ -92,7 +168,7 @@ img {
 }
 
 .brand a {
-  color: var(--secondary);
+  color: var(--primary-000);
   text-decoration: none;
 }
 
@@ -100,52 +176,8 @@ img {
   width: 100px;
 }
 
-/* H E A D I N G */
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 100%;
-}
-
-p {
-  font-size: 20px;
-  font-weight: 100;
-  margin: 10px 0 0;
-  opacity: 0.75;
-}
-
-.title {
-  font-family: "PT Serif", serif;
-  color: var(--primary);
-  font-size: 45px;
-  text-transform: capitalize;
-
-  z-index: 2;
-
-  margin: 10px 0;
-}
-
-.p-title {
-  font-family: "PT Serif", serif;
-  color: var(--primary);
-  font-size: 22px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* H E A D I N G */
-
-/* M E N U */
-
 .menu {
-  background: var(--primary-color);
+  background: var(--secondary-900);
   width: 500px;
   height: 100vh;
 
@@ -173,7 +205,7 @@ p {
 
 .menu-links a {
   font-weight: 100;
-  color: var(--secondary);
+  color: var(--primary-000);
   text-decoration: none;
   text-transform: capitalize;
   text-shadow: 15px 0 0 rgb(0, 0, 0, 0);
@@ -216,7 +248,7 @@ p {
 .hamburger span:before {
   content: "";
 
-  background: var(--secondary);
+  background: var(--primary-000);
   width: 100%;
   height: 1px;
 
@@ -229,7 +261,7 @@ p {
 .hamburger span:after {
   content: "";
 
-  background: var(--secondary);
+  background: var(--primary-000);
   width: 100%;
   height: 1px;
 
@@ -252,7 +284,7 @@ p {
 .ham-close span:before {
   content: "";
 
-  background: var(--secondary);
+  background: var(--primary-000);
   width: 100%;
   height: 1px;
 
@@ -266,7 +298,7 @@ p {
 .ham-close span:after {
   content: "";
 
-  background: var(--secondary);
+  background: var(--primary-000);
   width: 100%;
   height: 1px;
 
@@ -282,7 +314,7 @@ p {
 /* B U T T O N S */
 
 .btn {
-  color: var(--primary);
+  color: var(--primary-900);
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
@@ -291,20 +323,19 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 
-  background: none;
   position: relative;
+  background: none;
+  width: auto;
 
   padding: 10px 25px;
   margin: 15px 0;
-  border: 1px solid var(--primary);
-  /* border-radius: 36px; */
-  width: auto;
+  border: 1px solid var(--primary-900);
 
   transition: 0.3s ease;
 }
 
 .btn-secondary {
-  color: var(--secondary);
+  color: var(--primary-000);
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
@@ -313,25 +344,66 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 
-  background: none;
   position: relative;
+  background: none;
+  width: auto;
 
   padding: 10px 25px;
   margin: 15px 0;
-  border: 1px solid var(--secondary);
-  /* border-radius: 36px; */
-  width: auto;
+  border: 1px solid var(--primary-000);
 
   transition: 0.3s ease;
 }
 
 .btn-secondary:hover,
 .btn:hover {
-  color: var(--primary-color);
-  background: var(--secondary);
+  color: var(--secondary-900);
+  background: var(--primary-000);
 
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--primary-000);
   box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.back-top {
+  position: fixed;
+  background: var(--secondary-900);
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 10px;
+  transform: scale(0);
+
+  padding: 0;
+  border: 1px solid var(--primary-000);
+
+  z-index: 5;
+}
+
+.back-top:hover {
+  background: var(--primary-000);
+  border: 1px solid var(--secondary-900);
+}
+
+.back-top-pop {
+  transform: scale(1);
+}
+
+.back-top span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+
+  transform: translateX(-50%) rotate(-45deg);
+
+  border-top: 1px solid var(--primary-000);
+  border-right: 1px solid var(--primary-000);
+}
+
+.back-top:hover span {
+  border-top: 1px solid var(--secondary-900);
+  border-right: 1px solid var(--secondary-900);
 }
 
 /* B U T T O N S */
@@ -350,31 +422,6 @@ p {
   align-items: center;
 }
 
-/* .modes {
-  font-size: 20px;
-  line-height: 20px;
-
-  width: 20px;
-  height: 20px;
-}
-
-.light-mode,
-.dark-mode {
-  color: var(--primary);
-
-  position: absolute;
-
-  display: block;
-  cursor: pointer;
-  opacity: 1;
-  transition: 1s ease;
-}
-
-.mode-active {
-  opacity: 0;
-  transition: 1s ease;
-} */
-
 /* N A V I G A T I O N   B U T T O N S */
 
 /* S O C I A L   L I N K S */
@@ -392,7 +439,7 @@ p {
 }
 
 .social-links a {
-  color: var(--secondary);
+  color: var(--primary-000);
   font-weight: 100;
   text-transform: capitalize;
   text-decoration: none;
@@ -412,86 +459,6 @@ p {
 
 /* M E N U */
 
-/* S E C T I O N S */
-
-section {
-  background: var(--secondary);
-  height: 100vh;
-  width: 100%;
-
-  position: relative;
-}
-
-.container {
-  position: relative;
-  width: 1140px;
-  margin: auto;
-  height: 100%;
-}
-
-.center {
-  width: 100%;
-
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.text {
-  color: var(--primary);
-  font-weight: 100;
-}
-
-.align-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.back-top {
-  background: var(--primary-color);
-
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  right: 20px;
-  bottom: 10px;
-  transform: scale(0);
-
-  padding: 0;
-  border: 1px solid var(--secondary);
-
-  z-index: 5;
-}
-
-.back-top:hover {
-  background: var(--secondary);
-  border: 1px solid var(--primary-color);
-}
-
-.back-top-pop {
-  transform: scale(1);
-}
-
-.back-top span {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-
-  transform: translateX(-50%) rotate(-45deg);
-
-  border-top: 1px solid var(--secondary);
-  border-right: 1px solid var(--secondary);
-}
-
-.back-top:hover span {
-  border-top: 1px solid var(--primary-color);
-  border-right: 1px solid var(--primary-color);
-}
-
-/* S E C T I O N S */
-
 /* C A R D S */
 
 .card {
@@ -500,9 +467,6 @@ section {
 
   padding: 15px;
   transition: 0.3s ease;
-  /* border-radius: 15px; */
-
-  transition: 0.3s ease;
 }
 
 .card-img {
@@ -510,7 +474,6 @@ section {
   width: 100%;
   height: 400px;
 
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 
@@ -524,7 +487,7 @@ section {
 .card-img::after {
   content: "";
 
-  background: var(--primary);
+  background: var(--primary-900);
   position: absolute;
   top: 0;
   left: 0;
@@ -550,7 +513,7 @@ section {
 }
 
 .card-title {
-  color: var(--secondary);
+  color: var(--primary-000);
   font-family: "PT Serif", serif;
   font-size: 30px;
   position: absolute;
@@ -561,7 +524,7 @@ section {
 .card p {
   position: relative;
   font-weight: 100;
-  color: var(--secondary);
+  color: var(--primary-000);
 }
 
 .card-button {
@@ -652,7 +615,7 @@ section {
 }
 
 .input input {
-  color: var(--primary);
+  color: var(--primary-900);
   font-size: 16px;
   font-weight: 100;
   font-family: inherit;
@@ -661,12 +624,12 @@ section {
   width: calc(100% - 40px);
 
   padding: 15px 15px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-900);
   /* border-radius: 10px; */
 }
 
 .input textarea {
-  color: var(--primary);
+  color: var(--primary-900);
   font-size: 16px;
   font-weight: 100;
   font-family: inherit;
@@ -675,18 +638,18 @@ section {
   width: calc(100% - 40px);
 
   padding: 15px 15px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-900);
   /* border-radius: 10px; */
 }
 
 .label {
-  color: var(--primary);
+  color: var(--primary-900);
   font-weight: 300;
   font-size: 15px;
   text-transform: capitalize;
   line-height: 16px;
 
-  background: var(--secondary);
+  background: var(--primary-000);
 
   position: absolute;
   top: 18px;
@@ -706,7 +669,7 @@ textarea:focus {
 }
 
 .input a {
-  color: var(--primary-color);
+  color: var(--secondary-900);
   font-size: 14px;
   font-weight: 100;
   text-decoration: none;
@@ -715,7 +678,7 @@ textarea:focus {
 }
 
 .input a:hover {
-  color: var(--primary);
+  color: var(--primary-900);
 }
 
 .form-col {
